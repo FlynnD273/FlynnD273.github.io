@@ -4,7 +4,7 @@ class Sidebar extends HTMLElement {
     }
 
 connectedCallback() {
-    this.outerHTML = `
+    this.innerHTML = `
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
 
