@@ -40,7 +40,7 @@ connectedCallback() {
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:fhduniho@wpi.edy" class="contact-link">fhduniho@wpi.edy</a>
+              <a href="mailto:fhduniho@wpi.edu" class="contact-link">fhduniho@wpi.edu</a>
             </div>
 
           </li>
