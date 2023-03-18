@@ -68,7 +68,7 @@ connectedCallback() {
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Carnation, Washington, USA</address>
+              <a href="https://www.google.com/maps/place/Carnation,+WA+98014/"><address>Carnation, Washington, USA</address></a>
             </div>
 
           </li>
