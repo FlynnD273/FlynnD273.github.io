@@ -10,19 +10,19 @@ connectedCallback() {
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <a class="navbar-link" href="index.html">About</a>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <a class="navbar-link" href="resume.html">Resume</a>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <a class="navbar-link" href="projects.html">Projects</a>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <a class="navbar-link" href="hobbies.html">Hobbies</a>
           </li>
 
         </ul>

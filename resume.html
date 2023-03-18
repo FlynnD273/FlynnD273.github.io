@@ -26,16 +26,17 @@
 
   <script src="./components/sidebar.js" type="text/javascript" defer></script>
   <script src="./components/navbar.js" type="text/javascript" defer></script>
-  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script>
       $(function(){
           $('a').each(function(){
               if ($(this).prop('href') == window.location.href) {
-                  $(this).addClass('active'); $(this).parents('li').addClass('active');
+                  $(this).addClass('active');
               }
           });
       });
   </script>
+
 </head>
 
 <body>
