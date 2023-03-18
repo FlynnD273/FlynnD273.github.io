@@ -331,11 +331,6 @@ main {
   gap: 15px;
 }
 
-.avatar-box {
-  background: var(--bg-gradient-onyx);
-  border-radius: 20px;
-}
-
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
@@ -1134,10 +1129,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar.active { max-height: 584px; }
 
   .sidebar-info { gap: 25px; }
+  
+  .avatar-box { width: 120px; height: 120px; }
 
-  .avatar-box { border-radius: 30px; }
-
-  .avatar-box img { width: 120px; border-radius: 30px; }
+  .avatar-box img { width: 100%; border-radius: 30px; }
 
   .info-content .name { margin-bottom: 15px; }
 
@@ -1632,8 +1627,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .sidebar-info { flex-direction: column; }
-
-  .avatar-box img { width: 150px; }
 
   .info-content .name {
     white-space: nowrap;
