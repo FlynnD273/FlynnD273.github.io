@@ -5,8 +5,7 @@ class Sidebar extends HTMLElement {
 
 connectedCallback() {
     this.outerHTML = `
-    <aside class="sidebar">
-
+    <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
 
         <figure class="avatar-box">
@@ -19,10 +18,15 @@ connectedCallback() {
           <p class="title">Computer Science Major</p>
         </div>
 
+        <button class="info_more-btn" onclick='document.querySelector("[data-sidebar]").classList.toggle("active");' data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
       </div>
 
       <div class="sidebar-info_more">
-
         <div class="separator"></div>
 
         <ul class="contacts-list">
