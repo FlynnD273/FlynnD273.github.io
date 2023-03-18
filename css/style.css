@@ -989,6 +989,8 @@ figure img {
 
   .navbar-link { --fs-8: 14px; }
 
+  .navbar-item a { display: block; }
+
 
 
   /**
