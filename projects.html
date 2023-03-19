@@ -73,8 +73,6 @@
           <h2 class="h2 article-title">Personal Projects</h2>
         </header>
 
-        <p>Click on the project title or the preview image to view the Github repository</p>
-
         <div class="card">
           <a href="https://github.com/FlynnD273/CanvasGetAssignments">
             <h3 class="project-title">Get Canvas Assignments</h3>
@@ -84,9 +82,7 @@
             This project was made primarily so that I would have an easy-to-access offline todo list of all of my class assignments. I had to learn how to use the Canvas API, and I had to learn how to parse the resultant JSON files into something useful. Once I've received all of the data from Canvas that I need, I then use Linq to filter the collections into the various categories. I need to group the assignments by the class they're from, and sort them by due date if there is a due date. If there's no due date, then those assignments get sent to a different collection. All of these then get written into a markdown file as a checklist, with the due date and Canvas links to the assignments. If an assignment is completed on Canvas or checked off locally, it will remove that assignment from the list. I also implemented a weekly todo list that resets every Monday for more customization. This project is meant to integrate with Obsidian Notes, which is why I chose the markdown format. 
           </p>
           <figure class="project-figure">
-            <a href="https://github.com/FlynnD273/CanvasGetAssignments">
-              <img src="images/projects/canvas.png" alt="Screenshot of example output for the Canvas assignment project">
-            </a>
+              <img class="project-image" src="images/projects/canvas.png" alt="Screenshot of example output for the Canvas assignment project">
             <figcaption>This is an example output from the console, so you can see which assignments it's importing into the markdown file</figcaption>
           </figure>
         </div>
@@ -100,9 +96,7 @@
             This project was made so I could easily cut videos to the desired start and endpoints. It's built entirely in WPF, and is essentially a wrapper for ffmpeg, which is the tool that does the actual trimming. There are lots of applications out there that can cut videos like this, but most start up a lot slower, and at least in the case of the built in Windows utility, crash a lot more. I just wanted something that makes it quick and easy to cut either individual videos or entire folders of video files. 
           </p>
           <figure class="project-figure">
-            <a href="https://github.com/FlynnD273/TrimVideo">
-              <img src="images/projects/trimvideo.png" alt="Screenshot of the trim video project">
-            </a>
+            <img class="project-image" src="images/projects/trimvideo.png" alt="Screenshot of the trim video project">
             <figcaption>This is an example of the UI. The left window is the startup screen, the right window is the cutting UI</figcaption>
           </figure>
         </div>
@@ -116,9 +110,7 @@
             This project was mostly made so I could practice using Python more. At WPI, I can download my class schedule as an Excel spreadsheet. This Python script will read that Excel spreadsheet and generate an iCalendar file that I can import into my calendar. This involves parsing times from text, and using pandas to read the Excel spreadsheet into a dataframe. I also had to learn about the iCalendar format and how the different properties work together. 
           </p>
           <figure class="project-figure">
-            <a href="https://github.com/FlynnD273/ImportWorkdayClasses">
-              <img src="images/projects/importworkday.png" alt="Screenshot of the Workday class coverter project">
-            </a>
+            <img class="project-image" src="images/projects/importworkday.png" alt="Screenshot of the Workday class coverter project">
             <figcaption>This is an example of the console output. The left window is the Excel spreadsheet, the right window is the console output, which reflects the contents of the generated iCalendar format</figcaption>
           </figure>
         </div>
@@ -132,9 +124,7 @@
             This project was an exercise of implementing context-free grammars. I had learned this in freshman year at WPI, and I thought that this would be a good way to practice actually using it. Pearson for physics uses a proprietary format for its expression editor, and it's annoying to type out the expression again if I need to use a calculator. So I made this program to convert from Pearson's format to a format that any search engine will understand. I also added functionality to just do the calculation locally too to speed up my work. 
           </p>
           <figure class="project-figure">
-            <a href="https://github.com/FlynnD273/ParsePearson">
-              <img src="images/projects/importworkday.png" alt="Screenshot of the Workday class coverter project">
-            </a>
+            <img class="project-image" src="images/projects/parsemastering.png" alt="Screenshot of the Workday class coverter project">
             <figcaption>This is an example of the console output. You can paste in the Pearson format, and it will output the general expression, as well as the calculated value</figcaption>
           </figure>
         </div>
@@ -143,13 +133,15 @@
   </main>
 
   <!-- modal template  -->
-  <dialog class="modal-dialog">
-    <ion-icon id="close" class="modal-close" name="close-outline"></ion-icon>
-    <div class="modal-body">
-      <img class="modal-img" src="" alt="" />
-    </div>
-  </dialog>
+  <div id="myModal" class="modal" onclick="style.display='none'">
 
+    <!-- The Close Button -->
+    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+  </div>
+  
   <!--
     - custom js link
   -->
@@ -160,6 +152,18 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+      var modalImg = $("#img01");
+      $('.project-image').click(function(){
+          modal.style.display = "block";
+          var newSrc = this.src;
+          modalImg.attr('src', newSrc);
+      });
+  </script>
 
 </body>
 
