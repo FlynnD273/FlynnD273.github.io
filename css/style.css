@@ -346,7 +346,7 @@ span { font-size: var(--fs-6) !important; }
   #MAIN
 \*-----------------------------------*/
 
-main {
+body {
   margin: 15px 12px;
   margin-bottom: 75px;
   min-width: 259px;
@@ -362,12 +362,12 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
+  max-height: 140px;
   overflow: hidden;
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 405px; }
+.sidebar.active { max-height: 800px; }
 
 .sidebar-info {
   position: relative;
@@ -939,7 +939,7 @@ figure img {
    * #MAIN
    */
 
-  main {
+  body {
     margin-top: 60px;
     margin-bottom: 100px;
   }
@@ -1135,7 +1135,7 @@ figure img {
    * REUSED STYLE
    */
 
-  .sidebar, article { width: 700px; }
+  article { width: 700px; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
@@ -1163,11 +1163,6 @@ figure img {
    */
 
   .input-wrapper { grid-template-columns: 1fr 1fr; }
-
-  .form-btn {
-    width: max-content;
-    margin-left: auto;
-  }
   
 }
 
@@ -1203,18 +1198,22 @@ figure img {
    * REUSED STYLE
    */
 
-  .sidebar, article {
+  article {
     width: 950px;
+    box-shadow: var(--shadow-5);
+  }
+
+  .sidebar {
     box-shadow: var(--shadow-5);
   }
 
 
 
   /**
-   * MAIN 
+   * body 
    */
 
-  main { margin-bottom: 60px; }
+  body { margin-bottom: 60px; }
 
   .main-content {
     position: relative;
@@ -1322,9 +1321,12 @@ figure img {
    * REUSED STYLE
    */
 
-  .sidebar, article { width: auto; }
+  .sidebar { min-width: 300px; }
 
-  article { min-height: 100%; }
+  article { 
+    min-height: 100%;
+    width: auto;
+  }
 
 
 
@@ -1332,7 +1334,7 @@ figure img {
    * MAIN
    */
 
-  main {
+  body {
     max-width: 1200px;
     margin-inline: auto;
     display: flex;
@@ -1343,7 +1345,7 @@ figure img {
 
   .main-content {
     min-width: 75%;
-    width: 75%;
+    width: auto;
     margin: 0;
   }
 
