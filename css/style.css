@@ -838,6 +838,14 @@ figure img {
   margin-top: 20px;
 }
 
+.instagram-media {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4 / 5;
+}
+
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
