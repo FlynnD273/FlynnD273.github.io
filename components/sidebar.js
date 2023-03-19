@@ -80,20 +80,20 @@ connectedCallback() {
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://github.com/FlynnD273" class="social-link" title="Github">
-              <ion-icon name="logo-github"></ion-icon>
+            <a href="https://github.com/FlynnD273" class="social-link">
+              <ion-icon name="logo-github">Github</ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/flynnduniho/" class="social-link" title="LinkedIn">
-              <ion-icon name="logo-linkedin"></ion-icon>
+            <a href="https://www.linkedin.com/in/flynnduniho/" class="social-link">
+              <ion-icon name="logo-linkedin">LinkedIn</ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://www.instagram.com/flynnd03/" class="social-link" title="Instagram">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://www.instagram.com/flynnd03/" class="social-link">
+              <ion-icon name="logo-instagram">Instagram</ion-icon>
             </a>
           </li>
 
