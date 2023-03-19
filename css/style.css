@@ -262,11 +262,11 @@ h5 {
   text-transform: capitalize;
 }
 
-h2 { font-size: var(--fs-1); }
+h2 { font-size: var(--fs-1); color: var(--accent-primary); }
 
-h3 { font-size: var(--fs-2); color: var(--accent-primary); }
+h3 { font-size: var(--fs-2); color: var(--accent-secondary); }
 
-h4 { font-size: var(--fs-4); color: var(--accent-secondary);}
+h4 { font-size: var(--fs-4); }
 
 h5 {
   font-size: var(--fs-7);
