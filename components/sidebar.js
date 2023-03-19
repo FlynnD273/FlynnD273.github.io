@@ -9,7 +9,7 @@ connectedCallback() {
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="images/profile.jpg" alt="Flynn Duniho">
+          <img src="images/profile.jpg" alt="Portrait photo of Flynn Duniho">
         </figure>
 
         <div class="info-content">
