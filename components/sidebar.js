@@ -13,7 +13,7 @@ connectedCallback() {
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Flynn Duniho">Flynn Duniho</h1>
+          <h2 class="name" title="Flynn Duniho">Flynn Duniho</h2>
 
           <p class="title">CS Major</p>
         </div>
@@ -80,19 +80,19 @@ connectedCallback() {
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://github.com/FlynnD273" class="social-link">
+            <a href="https://github.com/FlynnD273" class="social-link" title="Github">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/flynnduniho/" class="social-link">
+            <a href="https://www.linkedin.com/in/flynnduniho/" class="social-link" title="LinkedIn">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://www.instagram.com/flynnd03/" class="social-link">
+            <a href="https://www.instagram.com/flynnd03/" class="social-link" title="Instagram">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
