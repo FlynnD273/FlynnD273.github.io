@@ -13,7 +13,7 @@ connectedCallback() {
         </figure>
 
         <div class="info-content">
-          <h2 class="name" title="Flynn Duniho">Flynn Duniho</h2>
+          <h2 class="name">Flynn Duniho</h2>
 
           <p class="title">CS Major</p>
         </div>
