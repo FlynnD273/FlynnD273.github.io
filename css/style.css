@@ -66,8 +66,8 @@
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 13%);
-  --eerie-black-3: hsl(240, 4%, 9%);
+  --eerie-black-2: hsl(240, 2%, 8%);
+  --eerie-black-3: hsl(240, 4%, 6%);
   --eerie-black-4: hsl(240, 4%, 5%);
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
@@ -253,6 +253,7 @@ article.active {
   100% { opacity: 1; }
 }
 
+h1,
 h2,
 h3,
 h4,
