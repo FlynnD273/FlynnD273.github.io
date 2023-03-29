@@ -1205,7 +1205,7 @@ figure img {
 
   body::-webkit-scrollbar-button { height: 60px; }
 
-  .avatar { width: 200px; margin-left: auto; margin-right: auto; }
+  .avatar { width: 125px; margin-left: auto; margin-right: auto; }
 
   /**
    * REUSED STYLE
@@ -1252,7 +1252,7 @@ figure img {
     max-height: max-content;
     height: 100%;
     margin-bottom: 0;
-    padding-top: 60px;
+    padding-top: 30px;
     z-index: 1;
   }
 
