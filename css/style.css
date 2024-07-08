@@ -7,10 +7,6 @@
  * copyright 2022 @codewithsadee
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara&display=swap');
-
-
-
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -602,7 +598,7 @@ body {
 
 .timeline { margin-bottom: 30px; }
 
-.timeline .title-wrapper {
+.title-wrapper {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -680,6 +676,15 @@ figure:last-child {
   margin-bottom: 0;
 }
 
+figure video {
+  width: 100%;
+  border-radius: 5px;
+}
+
+figure video {
+  width: 100%;
+  border-radius: 5px;
+}
 figure img {
   width: 100%;
   border-radius: 5px;
@@ -729,9 +734,9 @@ figure img {
   /* center the element */
   right: 0;
   left: 0;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
   top: 20%;
+  bottom: 20%;
   width: 100%;
   max-width: 1000px;
   border-radius: 10px;
@@ -1099,6 +1104,8 @@ figure img {
 
   figure img { width: 75%; }
 
+  figure video { width: 75%; }
+
   /**
    * body 
    */
@@ -1173,18 +1180,6 @@ figure img {
 
   .blog-banner-box { height: 230px; }
 
-}
-
-
-
-
-
-/**
- * responsive larger than 1250px screen
- */
-
-@media (min-width: 1250px) {
-
   /**
    * RESET
    */
@@ -1220,13 +1215,14 @@ figure img {
 
   figure img { width: 50%; }
 
+  figure video { width: 50%; }
+
 
   /**
    * MAIN
    */
 
   body {
-    max-width: 1200px;
     margin-inline: auto;
     display: flex;
     justify-content: center;

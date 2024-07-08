@@ -28,13 +28,13 @@
   <script src="components/navbar.js" type="text/javascript" defer></script>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script>
-      $(function(){
-          $('a').each(function(){
-              if ($(this).prop('href') == window.location.href) {
-                  $(this).addClass('active');
-              }
-          });
+    $(function () {
+      $('a').each(function () {
+        if ($(this).prop('href') == window.location.href) {
+          $(this).addClass('active');
+        }
       });
+    });
   </script>
 
 </head>
@@ -69,65 +69,87 @@
         - #RESUME
       -->
 
-        <header>
-          <h1 class="article-title">Personal Projects</h1>
-        </header>
+      <header>
+        <h1 class="article-title">Personal Projects</h1>
+      </header>
 
-        <div class="card">
-          <a href="https://github.com/FlynnD273/CanvasGetAssignments">
-            <h2 class="project-title">Get Canvas Assignments</h2>
-          </a>
+      <div class="card">
+        <a href="https://github.com/FlynnD273/GarticDrawer">
+          <h2 class="project-title">Gartic Autodraw</h2>
+        </a>
 
-          <p>
-            Uses the public Canvas API to pull assignments into a checklist in a local Markdown file.
-          </p>
-          <figure class="project-figure">
-              <img class="project-image" src="images/projects/canvas.png" alt="Screenshot of example output for the Canvas assignment project">
-            <figcaption>This is an example output from the console, so you can see which assignments it's importing into the markdown file</figcaption>
-          </figure>
-        </div>
+        <p>A program that uses a greedy gradient-descent algorithm to draw ellipses, rectangles, and lines in the online
+          Gartic Phone application to approximate an arbitrary target image.</p>
+        <figure class="project-figure">
+          <img class="project-image" src="images/projects/gartic.png"
+            alt="Screenshot of Gartic Phone, with a drawing of Kirby in it">
+          <figcaption>This is drawn by the program, drawn with a total of 750 different shapes</figcaption>
+        </figure>
+      </div>
 
-        <div class="card">
-          <a href="https://github.com/FlynnD273/TrimVideo">
-            <h2 class="project-title">Trim Video</h2>
-          </a>
+      <div class="card">
+        <a href="https://github.com/FlynnD273/CanvasGetAssignments">
+          <h2 class="project-title">Get Canvas Assignments</h2>
+        </a>
 
-          <p>
-            Lightweight WPF application with an intuitive UI for quickly cutting video files to the desired length.
-          </p>
-          <figure class="project-figure">
-            <img class="project-image" src="images/projects/trimvideo.png" alt="Screenshot of the trim video project">
-            <figcaption>This is an example of the UI. The left window is the startup screen, the right window is the cutting UI</figcaption>
-          </figure>
-        </div>
+        <p>
+          Uses the public Canvas API to pull assignments into a checklist in a local Markdown file.
+        </p>
+        <figure class="project-figure">
+          <img class="project-image" src="images/projects/canvas.png"
+            alt="Screenshot of example output for the Canvas assignment project">
+          <figcaption>This is an example output from the console, so you can see which assignments it's importing into
+            the markdown file</figcaption>
+        </figure>
+      </div>
 
-        <div class="card">
-          <a href="https://github.com/FlynnD273/ImportWorkdayClasses">
-            <h2 class="project-title">Convert Workday Class Schedule</h2>
-          </a>
+      <div class="card">
+        <a href="https://github.com/FlynnD273/TrimVideo">
+          <h2 class="project-title">Trim Video</h2>
+        </a>
 
-          <p>
-            Reads the data in an Excel file and creates an iCalendar file to easily import class schedules. 
-          </p>
-          <figure class="project-figure">
-            <img class="project-image" src="images/projects/importworkday.png" alt="Screenshot of the Workday class coverter project">
-            <figcaption>This is an example of the console output. The left window is the Excel spreadsheet, the right window is the console output, which reflects the contents of the generated iCalendar format</figcaption>
-          </figure>
-        </div>
+        <p>
+          Lightweight WPF application with an intuitive UI for quickly cutting video files to the desired length.
+        </p>
+        <figure class="project-figure">
+          <img class="project-image" src="images/projects/trimvideo.png" alt="Screenshot of the trim video project">
+          <figcaption>This is an example of the UI. The left window is the startup screen, the right window is the
+            cutting UI</figcaption>
+        </figure>
+      </div>
 
-        <div class="card">
-          <a href="https://github.com/FlynnD273/ParsePearson">
-            <h2 class="project-title">Parse Pearson Expressions</h2>
-          </a>
+      <div class="card">
+        <a href="https://github.com/FlynnD273/ImportWorkdayClasses">
+          <h2 class="project-title">Convert Workday Class Schedule</h2>
+        </a>
 
-          <p>
-            Uses context-free grammar structures to convert from a proprietary mathematical expression format to a more commonly used format.
-          </p>
-          <figure class="project-figure">
-            <img class="project-image" src="images/projects/parsemastering.png" alt="Screenshot of the Workday class coverter project">
-            <figcaption>This is an example of the console output. You can paste in the Pearson format, and it will output the general expression, as well as the calculated value</figcaption>
-          </figure>
-        </div>
+        <p>
+          Reads the data in an Excel file and creates an iCalendar file to easily import class schedules.
+        </p>
+        <figure class="project-figure">
+          <img class="project-image" src="images/projects/importworkday.png"
+            alt="Screenshot of the Workday class coverter project">
+          <figcaption>This is an example of the console output. The left window is the Excel spreadsheet, the right
+            window is the console output, which reflects the contents of the generated iCalendar format</figcaption>
+        </figure>
+      </div>
+
+      <div class="card">
+        <a href="https://github.com/FlynnD273/ParsePearson">
+          <h2 class="project-title">Parse Pearson Expressions</h2>
+        </a>
+
+        <p>
+          Uses context-free grammar structures to convert from a proprietary mathematical expression format to a more
+          commonly used format.
+        </p>
+        <figure class="project-figure">
+          <img class="project-image" src="images/projects/parsemastering.png"
+            alt="Screenshot of the Workday class coverter project">
+          <figcaption>This is an example of the console output. You can paste in the Pearson format, and it will output
+            the general expression, as well as the calculated value</figcaption>
+        </figure>
+      </div>
     </div>
 
   </main>
@@ -140,7 +162,7 @@
     <!-- Modal Content (The Image) -->
     <img class="modal-content" id="img01" alt="Example output">
   </div>
-  
+
   <!--
     - custom js link
   -->
@@ -156,12 +178,12 @@
     // Get the modal
     var modal = document.getElementById('myModal');
 
-      var modalImg = $("#img01");
-      $('.project-image').click(function(){
-          modal.style.display = "block";
-          var newSrc = this.src;
-          modalImg.attr('src', newSrc);
-      });
+    var modalImg = $("#img01");
+    $('.project-image').click(function () {
+      modal.style.display = "block";
+      var newSrc = this.src;
+      modalImg.attr('src', newSrc);
+    });
   </script>
 
 </body>

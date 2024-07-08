@@ -1,0 +1,173 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{\href{https://flynnd273.github.io/}{\Large Flynn Duniho}} & Email: \href{mailto:flynn@harveyosity.org}{flynn@harveyosity.org}\\
+	\href{https://flynnd273.github.io/}{https://flynnd273.github.io/} & Mobile: +1 (425) 241-1216 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+			{Worcester Polytechnic Institute (WPI)}{Worcester, MA}
+      {Bachelor of Science in Computer Science}{August 2021 - May 2025}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Inqurium}{Remote}
+      {Software Engineer}{May 2024 - Current}
+      \resumeItemListStart
+        \resumeItem{Incorporating AI}
+          {Integrated Whisper.cpp into a video transcription GUI app.}
+        \resumeItem{Unit Testing}
+          {Authored frontend unit tests that validate the web UI presented to the user using Playwright and Django in Python.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Benchmark SW}{Bothell, WA}
+      {Software Engineer Intern}{May 2022 - August 2022}
+      \resumeItemListStart
+        \resumeItem{SQL}
+          {Migrated Microsoft Access databases to SQL databases.}
+        \resumeItem{XML}
+          {Designed and wrote software to import data to the SQL database via custom XML files.}
+				\resumeItem{Context-free Grammars}
+					{Used context-free grammars to parse custom code to C\# objects.}
+				\resumeItem{WPF}
+					{Built software in Windows Presentation Foundation to allow for creating technical drawings in a user-friendly drag-and-drop manner.}
+				\resumeItem{Maintenance}
+					{Rewrote existing code structure to be more maintainable in the long-run, and completed partially written software.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Tesco Controls}{Bothell, WA}
+      {Software Engineer Intern}{June 2021 - August 2021}
+      \resumeItemListStart
+				\resumeItem{WPF}
+					{Wrote software to convert scanned images of technical drawings into an XML file outlining the elements of the drawing and the positions and connections, with the ability for the user to edit the layout.}
+				\resumeItem{Image Detection}
+				 {Wrote custom image detection algorithms to match symbols and find both printed and highlighted lines.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Worcester Polytechnic Institute}{Worcester, MA}
+      {Teaching Assistant}{August 2023 - Current}
+      \resumeItemListStart
+        \resumeItem{Intro to Algorithms Graduate Class}
+          {Helping students with intro to algorithms graduate class.}
+        \resumeItem{Office Hours}
+          {Available online an in-person to provide personalised assistance to students.}
+        \resumeItem{Teaching}
+          {Explained the reasoning behind solutions so that students would be able to solve similar problems on their own.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeItem{Algorithmically Approximate Images Using Geometric Shapes}
+      {Developed a program that uses a greedy gradient-descent algorithm to draw ellipses, rectangles, and lines in the online Gartic Phone application to approximate an arbitrary target image. \href{https://github.com/FlynnD273/GarticDrawer}{https://github.com/FlynnD273/GarticDrawer}}
+    
+    \resumeItem{Canvas assignment todo list in C\#}
+      {Created a program that calls the Canvas API using HTTPS requests. It parses the returned JSON strings into C\# objects, and writes unfinished assignments to a Markdown file. \href{https://github.com/FlynnD273/CanvasGetAssignments}{https://github.com/FlynnD273/CanvasGetAssignments}}
+
+    \resumeItem{Pearson mathematics parser in C\#}
+      {Built a console program that both converts the Pearson mathematical notation into standard human-readable inline notation using regular grammars, and calculates the value if it's an expression. \href{https://github.com/FlynnD273/ParsePearson}{https://github.com/FlynnD273/ParsePearson}}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Python, C\#, C, Java, Rust, SQL}
+   }
+   \item{
+     \textbf{Frameworks and Libraries}{: Windows Presentation Framework, Xamarin.Forms, Native Android in Java, Playwright, OpenCV, NumPy }
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
