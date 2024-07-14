@@ -95,10 +95,9 @@
   --fs-8: 17px;
 
   /* font-weight */
-  --fw-300: 300;
-  --fw-400: 400;
-  --fw-500: 500;
-  --fw-600: 600;
+  --fw-para: 400;
+  --fw-header: 500;
+  --fw-title: 600;
 
   /**
    * shadow
@@ -266,7 +265,7 @@ h4 { font-size: var(--fs-4); }
 
 h5 {
   font-size: var(--fs-7);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-header);
 }
 
 p { 
@@ -376,7 +375,7 @@ body {
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-header);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
 }
@@ -385,7 +384,7 @@ body {
   color: var(--white-1);
   background: var(--onyx);
   font-size: var(--fs-8);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-para);
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
@@ -625,7 +624,7 @@ body {
 
 .timeline-list span {
   color: var(--accent-tertiary);
-  font-weight: var(--fw-400);
+  font-weight: var(--fw-para);
   line-height: 1.6;
 }
 
@@ -657,7 +656,7 @@ body {
 
 ul,p, figcaption {
   color: var(--light-gray);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-para);
   line-height: 1.6;
   color: var(--light-gray);
   font-size: var(--fs-6);
@@ -915,7 +914,7 @@ figure img {
   }
 
   .article-title {
-    font-weight: var(--fw-600);
+    font-weight: var(--fw-title);
     padding-bottom: 15px;
   }
 
@@ -1141,7 +1140,7 @@ figure img {
     padding: 0 20px;
   }
 
-  .navbar-link { font-weight: var(--fw-500); }
+  .navbar-link { font-weight: var(--fw-header); }
 
 
 
@@ -1278,7 +1277,7 @@ figure img {
 
   .contact-info :is(.contact-link, time, address) {
     --fs-7: 14px;
-    font-weight: var(--fw-300);
+    font-weight: var(--fw-para);
   }
 
   .separator:last-of-type {

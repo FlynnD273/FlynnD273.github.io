@@ -8,7 +8,7 @@ connectedCallback() {
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
 
-        <img src="images/profile.png" class="avatar" alt="Portrait photo of Flynn Duniho">
+        <img src="images/profile.jpg" class="avatar" alt="Portrait photo of Flynn Duniho">
 
         <div class="info-content">
           <h2 class="name">Flynn Duniho</h2>
