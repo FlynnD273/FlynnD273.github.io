@@ -1441,7 +1441,6 @@ figure img {
    */
 
   .sidebar {
-    position: sticky;
     top: 60px;
     max-height: max-content;
     height: 100%;
