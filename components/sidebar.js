@@ -12,8 +12,6 @@ connectedCallback() {
 
         <div class="info-content">
           <h2 class="name">Flynn Duniho</h2>
-
-          <p class="title">CS Major</p>
         </div>
 
         <button class="info_more-btn" onclick='document.querySelector("[data-sidebar]").classList.toggle("active");' data-sidebar-btn>
