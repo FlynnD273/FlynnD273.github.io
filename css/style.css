@@ -1,4 +1,4 @@
-/*-----------------------------------*\
+/*-----------------------------------*\css
   #style.css
 \*-----------------------------------*/
 
@@ -959,40 +959,14 @@ figure img {
   aspect-ratio: 4 / 5;
 }
 
+
+.top-placeholder {
+  height: 208px;
+}
+
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
-
-/**
- * responsive larger than 450px screen
- */
-
-@media (min-width: 450px) {
-
-  /**
-   * client
-   */
-
-  .clients-item {
-    min-width: calc(33.33% - 10px);
-  }
-
-
-
-  /**
-   * #PORTFOLIO, BLOG 
-   */
-
-  .project-img,
-  .blog-banner-box {
-    height: auto;
-  }
-
-  .avatar-box {
-    width: 80px;
-  }
-}
-
 
 /**
  * responsive larger than 580px screen
@@ -1245,6 +1219,10 @@ figure img {
     --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
     --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
 
+  }
+
+  .top-placeholder {
+    display: none;
   }
 
   .modal-content {

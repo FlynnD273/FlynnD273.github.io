@@ -6,20 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flynn Duniho | Resume</title>
-
-  <!--
-    - favicon
-  -->
   <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
   <link rel="stylesheet" href="css/style.css">
-
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -29,35 +17,11 @@
 </head>
 
 <body>
-
-  <!--
-    - #SIDEBAR
-  -->
-
-  <custom-sidebar style="width: 300px;"></custom-sidebar>
-
-  <!--
-    - #MAIN
-  -->
-
+  <div class="top-placeholder"></div>
+  <custom-sidebar style="min-width: 24%;"></custom-sidebar>
   <main>
-
-    <!--
-      - #main-content
-    -->
-
     <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
       <custom-navbar></custom-navbar>
-
-      <!--
-        - #RESUME
-      -->
-
       <header style="display:flex">
         <h1 class="article-title">Resume</h1>
 
@@ -69,7 +33,6 @@
 
       <div class="card">
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
               <ion-icon aria-hidden="true" name="book-outline"></ion-icon>
@@ -85,11 +48,9 @@
               </p>
             </li>
           </ol>
-
         </section>
 
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
               <ion-icon aria-hidden="true" name="build-outline"></ion-icon>
@@ -154,7 +115,6 @@
 
 
           </ol>
-
         </section>
       </div>
 
@@ -167,6 +127,7 @@
               <div class="title-wrapper">
                 <h3>Languages</h3>
               </div>
+            </li>
 
             <li class="bullet-li">C#</li>
             <li class="bullet-li">C</li>
@@ -175,57 +136,37 @@
             <li class="bullet-li">Python</li>
             <li class="bullet-li">Rust</li>
             <li class="bullet-li">SQL</li>
-            </li>
 
             <li class="skills-item">
               <div class="title-wrapper">
                 <h3>Frameworks</h3>
               </div>
+            </li>
 
             <li class="bullet-li">Windows Presentation Foundation (WPF)</li>
             <li class="bullet-li">Xamarin.Forms</li>
             <li class="bullet-li">Android (Java)</li>
-            </li>
 
             <li class="skills-item">
               <div class="title-wrapper">
                 <h3>Team</h3>
               </div>
+            </li>
 
             <li class="bullet-li">Worked in multiple team environments, including FTC</li>
             <li class="bullet-li">Used to teaching teammates how to effectively use tools like Git</li>
             <li class="bullet-li">As team captain, I have learned how to work with others effectively and make sure
               everything runs smoothly</li>
-            </li>
 
           </ul>
 
         </section>
       </div>
-
     </div>
-
   </main>
 
-  <!-- modal template  -->
-  <dialog class="modal-dialog">
-    <ion-icon aria-hidden="true" id="close" class="modal-close" name="close-outline"></ion-icon>
-    <div class="modal-body">
-      <img class="modal-img" src="" alt="" />
-    </div>
-  </dialog>
-
-  <!--
-    - custom js link
-  -->
-  <script src="js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>

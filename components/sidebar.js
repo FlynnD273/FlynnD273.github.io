@@ -5,7 +5,7 @@ class Sidebar extends HTMLElement {
 
   connectedCallback() {
     this.outerHTML = `
-    <aside class="sidebar" width="300px" data-sidebar>
+    <aside class="sidebar"data-sidebar>
       <div class="sidebar-info">
 
         <img src="images/profile.jpg" class="avatar" alt="Portrait photo of Flynn Duniho">
@@ -16,7 +16,6 @@ class Sidebar extends HTMLElement {
 
         <button class="info_more-btn" onclick='document.querySelector("[data-sidebar]").classList.toggle("active");' data-sidebar-btn>
           <span>Show Contacts</span>
-
           <ion-icon name="chevron-down"></ion-icon>
         </button>
 
@@ -77,19 +76,19 @@ class Sidebar extends HTMLElement {
 
           <li class="social-item">
             <a href="https://github.com/FlynnD273" class="social-link">
-              <ion-icon name="logo-github">Github</ion-icon>
+              <ion-icon name="logo-github" style="min-height: 32px;"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
             <a href="https://www.linkedin.com/in/flynnduniho/" class="social-link">
-              <ion-icon name="logo-linkedin">LinkedIn</ion-icon>
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
             <a href="https://www.instagram.com/flynnd03/" class="social-link">
-              <ion-icon name="logo-instagram">Instagram</ion-icon>
+              <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
 
@@ -99,6 +98,7 @@ class Sidebar extends HTMLElement {
 
     </aside>
     `;
+    document.getElementsByClassName("top-placeholder")[0].style = "display: none;";
   }
 }
 

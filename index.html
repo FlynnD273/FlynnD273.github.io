@@ -6,15 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flynn Duniho | Main Page</title>
-
-  <!--
-    - favicon
-  -->
   <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
   <link rel="stylesheet" href="css/style.css">
 
   <script src="components/sidebar.js" type="text/javascript" defer></script>
@@ -22,36 +14,11 @@
 </head>
 
 <body>
-
-  <!--
-    - #SIDEBAR
-  -->
-
-  <custom-sidebar style="width: 300px;"></custom-sidebar>
-
-  <!--
-    - #MAIN
-  -->
-
+  <div class="top-placeholder"></div>
+  <custom-sidebar style="min-width: 24%;"></custom-sidebar>
   <main>
-
-
-
-    <!--
-      - #main-content
-    -->
-
     <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
       <custom-navbar></custom-navbar>
-
-      <!--
-        - #ABOUT
-      -->
       <header>
         <h1 class="article-title">About Me</h1>
       </header>
@@ -73,20 +40,12 @@
         </p>
       </section>
 
-
-      <!--
-        - service
-      -->
-
       <section class="service">
-
         <ul class="service-list">
-
           <li>
             <a href="resume" class="service-item">
               <div class="service-content-box">
                 <h2 class="service-item-title">Work Experience</h2>
-
                 <p class="service-item-text">
                   Built high-quality, intuitive, and powerful Windows Presentation Foundation applications
                 </p>
@@ -98,7 +57,6 @@
             <a href="projects" class="service-item">
               <div class="service-content-box">
                 <h2 class="service-item-title">Personal Projects</h2>
-
                 <p class="service-item-text">
                   I make projects to increase my day-to-day productivity in C# and Python
                 </p>
@@ -119,38 +77,12 @@
             </a>
           </li>
         </ul>
-
       </section>
-
-      <!-- <section class="attribution-section">
-        <a href="https://www.flaticon.com/free-icons/hobby" title="hobby icons">Hobby icons created by GOWI - Flaticon</a>
-        <a href="https://www.flaticon.com/free-icons/work" title="work icons">Work icons created by srip - Flaticon</a>
-        <a href="https://www.flaticon.com/free-icons/project" title="project icons">Project icons created by dDara - Flaticon</a>
-      </section> -->
-
     </div>
-
   </main>
 
-  <!-- modal template  -->
-  <dialog class="modal-dialog">
-    <ion-icon id="close" class="modal-close" name="close-outline"></ion-icon>
-    <div class="modal-body">
-      <img class="modal-img" src="" alt="" />
-    </div>
-  </dialog>
-
-  <!--
-    - custom js link
-  -->
-  <script src="js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
