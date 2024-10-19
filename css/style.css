@@ -109,21 +109,11 @@
 
 .service-item {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   gap: 18px;
   padding: 30px;
 }
-
-.service-icon-box {
-  margin-bottom: 0;
-  margin-top: 5px;
-}
-
-.service-content-box {
-  text-align: left;
-}
-
 
 /*-----------------------------------*\
   #RESET
@@ -1377,7 +1367,8 @@ figure img {
    */
 
   .sidebar {
-    min-width: 300px;
+    width: auto;
+    min-width: 320px;
   }
 
   article {
