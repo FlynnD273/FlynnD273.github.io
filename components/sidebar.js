@@ -1,11 +1,11 @@
 class Sidebar extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-connectedCallback() {
+  connectedCallback() {
     this.outerHTML = `
-    <aside class="sidebar" data-sidebar>
+    <aside class="sidebar" width="300px" data-sidebar>
       <div class="sidebar-info">
 
         <img src="images/profile.jpg" class="avatar" alt="Portrait photo of Flynn Duniho">
