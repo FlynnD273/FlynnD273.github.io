@@ -1,14 +1,12 @@
 class Navbar extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-connectedCallback() {
+  connectedCallback() {
     this.outerHTML = `
     <nav class="navbar">
-
         <ul class="navbar-list">
-
           <li class="navbar-item">
             <a class="navbar-link" href="./">About</a>
           </li>
@@ -29,6 +27,15 @@ connectedCallback() {
 
     </nav>
     `;
+    let links = document.getElementsByClassName("navbar-link");
+    console.log(links);
+    for (let i = 0; i < links.length; i++) {
+      let link = links[i];
+      if (link.href == window.location.href) {
+        link.className += " active";
+        break;
+      }
+    }
   }
 }
 

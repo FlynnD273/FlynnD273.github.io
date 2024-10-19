@@ -26,17 +26,6 @@
 
   <script src="components/sidebar.js" type="text/javascript" defer></script>
   <script src="components/navbar.js" type="text/javascript" defer></script>
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script>
-    $(function () {
-      $('a').each(function () {
-        if ($(this).prop('href') == window.location.href) {
-          $(this).addClass('active');
-        }
-      });
-    });
-  </script>
-
 </head>
 
 <body>
@@ -45,7 +34,7 @@
     - #SIDEBAR
   -->
 
-  <custom-sidebar width="300px"></custom-sidebar>
+  <custom-sidebar style="width: 300px;"></custom-sidebar>
 
   <!--
     - #MAIN
@@ -78,11 +67,14 @@
           <h2 class="project-title">Once Upon A ___</h2>
         </a>
 
-        <p>A game made for a week-long game development competition. All programming done by me, and all writing and player animations were done by my partner for the competition. Once Upon A ___ is a narrative-focused puzzle platformer where you rewrite the Prince's story as you play. Rearrange sentences to solve puzzles and watch as the Prince's story unfolds before your eyes.</p>
+        <p>A game made for a week-long game development competition. All programming done by me, and all writing and
+          player animations were done by my partner for the competition. Once Upon A ___ is a narrative-focused puzzle
+          platformer where you rewrite the Prince's story as you play. Rearrange sentences to solve puzzles and watch as
+          the Prince's story unfolds before your eyes.</p>
         <figure class="project-figure">
-          <img class="project-image" src="images/projects/onceupona.gif"
-            alt="The title screen for Once Upon A ___">
-          <figcaption>You can download the game from <a href="https://github.com/FlynnD273/OnceUponA">Github</a> or <a href="https://hedgehoggolf.itch.io/once-upon-a">Itch.io</a></figcaption>
+          <img class="project-image" src="images/projects/onceupona.gif" alt="The title screen for Once Upon A ___">
+          <figcaption>You can download the game from <a href="https://github.com/FlynnD273/OnceUponA">Github</a> or <a
+              href="https://hedgehoggolf.itch.io/once-upon-a">Itch.io</a></figcaption>
         </figure>
       </div>
 
