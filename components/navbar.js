@@ -4,28 +4,25 @@ class Navbar extends HTMLElement {
   }
 
   connectedCallback() {
-    this.outerHTML = `
-    <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <a class="navbar-link" href="./">About</a>
-          </li>
+    this.innerHTML = `
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a class="navbar-link" href="./">About</a>
+        </li>
 
-          <li class="navbar-item">
-            <a class="navbar-link" href="resume">Resume</a>
-          </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="resume">Resume</a>
+        </li>
 
-          <li class="navbar-item">
-            <a class="navbar-link" href="projects">Projects</a>
-          </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="projects">Projects</a>
+        </li>
 
-          <li class="navbar-item">
-            <a class="navbar-link" href="hobbies">Hobbies</a>
-          </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="hobbies">Hobbies</a>
+        </li>
 
-        </ul>
-
-    </nav>
+      </ul>
     `;
     let links = document.getElementsByClassName("navbar-link");
     console.log(links);
