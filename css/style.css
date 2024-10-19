@@ -951,7 +951,7 @@ figure img {
 
 
 .top-placeholder {
-  height: 208px;
+  height: 140px;
 }
 
 /*-----------------------------------*\
@@ -963,6 +963,10 @@ figure img {
  */
 
 @media (min-width: 580px) {
+
+  .top-placeholder {
+    height: 208px;
+  }
 
   .avatar {
     height: 120px;
