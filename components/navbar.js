@@ -4,8 +4,9 @@ class Navbar extends HTMLElement {
   }
 
   connectedCallback() {
-    this.innerHTML = `
-      <ul class="navbar-list">
+    const ul = document.createElement("ul");
+    ul.classList.add("navbar-list");
+    ul.innerHTML = `
         <li class="navbar-item">
           <a class="navbar-link" href="./">About</a>
         </li>
@@ -21,15 +22,13 @@ class Navbar extends HTMLElement {
         <li class="navbar-item">
           <a class="navbar-link" href="hobbies">Hobbies</a>
         </li>
-
-      </ul>
     `;
+    this.appendChild(ul);
     let links = document.getElementsByClassName("navbar-link");
-    console.log(links);
     for (let i = 0; i < links.length; i++) {
       let link = links[i];
-      if (link.href == window.location.href) {
-        link.className += " active";
+      if (window.location.href.startsWith(link.href)) {
+        link.classList.add("active");
         break;
       }
     }

@@ -1,8 +1,3 @@
-/*-----------------------------------*\css
-  #style.css
-\*-----------------------------------*/
-
-
 /**
  * copyright 2022 @codewithsadee
  */
@@ -758,10 +753,6 @@ figure video {
   border-radius: 5px;
 }
 
-figure video {
-  width: 100%;
-  border-radius: 5px;
-}
 
 figure img {
   width: 100%;
@@ -788,12 +779,12 @@ figure img {
   text-decoration-thickness: 2px;
 }
 
-.project-figure img {
+.project-figure .project-img {
   transform: none;
   transition: all 0.125s ease-in-out;
 }
 
-.project-figure img:hover {
+.project-figure .project-img:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
