@@ -14,9 +14,7 @@ class GameFrame extends HTMLElement {
       this.iframe.style.display = "block";
       this.appendChild(this.iframe);
       // From https://stackoverflow.com/a/63738422
-      if (this.iframe.requestFullScreen) {
-        this.iframe.requestFullScreen();
-      } else if (this.iframe.webkitRequestFullScreen) {
+      if (this.iframe.webkitRequestFullScreen) {
         this.iframe.webkitRequestFullScreen();
       } else if (this.iframe.mozRequestFullScreen) {
         this.iframe.mozRequestFullScreen();
@@ -24,6 +22,8 @@ class GameFrame extends HTMLElement {
         this.iframe.msRequestFullscreen();
       } else if (this.iframe.webkitEnterFullscreen) {
         this.iframe.webkitEnterFullscreen(); //for iphone this code worked
+      } else if (this.iframe.requestFullScreen) {
+        this.iframe.requestFullScreen();
       }
       this.iframe.onfullscreenchange = _ => hideGame();
     };
