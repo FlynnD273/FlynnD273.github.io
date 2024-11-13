@@ -27,7 +27,7 @@ class Navbar extends HTMLElement {
     let links = document.getElementsByClassName("navbar-link");
     for (let i = 0; i < links.length; i++) {
       let link = links[i];
-      if (window.location.href.startsWith(link.href)) {
+      if (window.location.href.indexOf(link.href) != -1) {
         link.classList.add("active");
         break;
       }
