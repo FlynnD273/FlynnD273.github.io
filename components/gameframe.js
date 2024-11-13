@@ -18,6 +18,8 @@ class GameFrame extends HTMLElement {
         await this.iframe.requestFullscreen();
       }
       catch (error) {
+        this.iframe.remove();
+        this.iframe = null;
         window.location.href = this.getAttribute("src");
       }
     };
