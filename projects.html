@@ -137,9 +137,9 @@
     </div>
   </main>
 
-  <div id="myModal" class="modal-container" onclick="style.display='none'">
-    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-    <img class="modal-content" id="img01" alt="Example output">
+  <div class="modal-container" onclick="style.display='none'">
+    <span class="close" onclick="document.getElementsByClassName('modal-container')[0].click()">&times;</span>
+    <img class="modal-content">
   </div>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -148,14 +148,15 @@
 
   <script>
     // Get the modal
-    var modal = document.getElementById('myModal');
-
-    var modalImg = $('#img01');
-    $('.project-img').click(function () {
-      modal.style.display = "block";
-      var newSrc = this.src;
-      modalImg.attr('src', newSrc);
-    });
+    var modal = document.getElementsByClassName("modal-container")[0];
+    var modalImg = modal.getElementsByClassName('modal-content')[0];
+    for (let pimg of document.getElementsByClassName("project-img")) {
+      pimg.onclick = () => {
+        modal.style.display = "block";
+        modalImg.src = pimg.src;
+        modalImg.alt = pimg.alt;
+      };
+    }
   </script>
 </body>
 
