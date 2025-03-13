@@ -90,6 +90,12 @@ class Sidebar extends HTMLElement {
             </a>
           </li>
 
+          <li class="social-item">
+            <a href="https://bsky.app/profile/flynnnnn.bsky.social" class="social-link">
+              <ion-icon name="logo-bluesky"></ion-icon>
+            </a>
+          </li>
+
         </ul>
       </div>
     `;
