@@ -91,8 +91,14 @@ class Sidebar extends HTMLElement {
           </li>
 
           <li class="social-item">
+            <a href="https://hedgehoggolf.itch.io/" class="social-link">
+              <ion-icon src="./images/itchio-logo-textless-white.svg"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
             <a href="https://bsky.app/profile/flynnnnn.bsky.social" class="social-link">
-              <ion-icon name="logo-bluesky"></ion-icon>
+              <ion-icon src="./images/bluesky_media_kit_logo.svg"></ion-icon>
             </a>
           </li>
 
