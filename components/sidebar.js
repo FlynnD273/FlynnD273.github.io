@@ -1,10 +1,10 @@
 class Sidebar extends HTMLElement {
-  constructor() {
-    super();
-  }
+	constructor() {
+		super();
+	}
 
-  connectedCallback() {
-    this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
       <div class="sidebar-info">
         <img src="images/profile.jpg" class="avatar" alt="Portrait photo of Flynn Duniho">
 
@@ -105,7 +105,7 @@ class Sidebar extends HTMLElement {
         </ul>
       </div>
     `;
-  }
+	}
 }
 
 customElements.define('custom-sidebar', Sidebar);
