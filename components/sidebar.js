@@ -61,7 +61,7 @@ class Sidebar extends HTMLElement {
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <a href="https://www.google.com/maps/place/Carnation,+WA+98014/"><address>Carnation, Washington, USA</address></a>
+              <a href="https://www.google.com/maps/place/Seattle,+WA+98121/"><address>Seattle, Washington, USA</address></a>
             </div>
 
           </li>
